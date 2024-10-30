@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Читы На Все Игры</title>
+    <link rel="stylesheet" href="styles.css" id="theme-link">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        .banner {
+            background-color: #ffcc00; /* Цвет фона баннера */
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            position: relative;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px; /* Отступ между изображением и текстом */
+        }
+
+        .banner img {
+            width: 50px; /* Размер логотипа */
+            height: 50px; /* Высота логотипа */
+            animation: spin 5s linear infinite; /* Анимация вращения */
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        footer {
+            background-color: #333; /* Цвет фона подвала */
+            color: white; /* Цвет текста */
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #ffcc00; /* Цвет ссылок */
+            margin: 0 10px; /* Отступы между ссылками */
+            text-decoration: none; /* Убираем подчеркивание */
+        }
+
+        footer img {
+            width: 30px; /* Размер иконок соцсетей */
+            height: 30px; /* Высота иконок соцсетей */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/my_logo.jpg" alt="Лого сайта" class="site-logo" onclick="refreshPage()">
+        <h1>Добро пожаловать в мир модификаций!</h1>
+        <a href="https://t.me/cheatmro" class="telegram-button" target="_blank">Подписаться на Телеграм</a>
+    </header>
+
+    <main>
+        <h2>Выберите игру для модификации:</h2>
+        <section class="game-selection">
+            <div class="game">
+                <a href="cheats.html">
+                    <img src="images/pubg.jpg" alt="PUBG">
+                </a>
+                <h3>PUBG</h3>
+            </div>
+            <div class="game">
+                <a href="standoff.html">
+                    <img src="images/standoff.jpg" alt="Standoff 2">
+                </a>
+                <h3>Standoff 2</h3>
+            </div>
+            <div class="game">
+                <a href="oxide.html">
+                    <img src="images/oxide.jpg" alt="Oxide Survival Island">
+                </a>
+                <h3>Oxide Survival Island</h3>
+            </div>
+            <div class="game">
+                <a href="minecraft.html">
+                    <img src="images/minecraft.jpg" alt="Minecraft">
+                </a>
+                <h3>Minecraft</h3>
+            </div>
+            <div class="game">
+                <a href="blocpost.html">
+                    <img src="images/blocpost.jpg" alt="BLOCPOST MOBILE">
+                </a>
+                <h3>BLOCPOST MOBILE</h3>
+            </div>
+        </section>
+
+        <div class="banner">
+            <img src="images/my_logo.jpg" alt="Лого" class="banner-logo">
+            <a href="https://t.me/cheatmro" target="_blank">Подписывайтесь на наш Телеграм!</a>
+        </div>
+
+        <section class="settings">
+            <h2>Настройки</h2>
+            <label for="theme-select">Выберите тему:</label>
+            <select id="theme-select" onchange="changeTheme()">
+                <option value="halloween">Хэллоуинская (по умолчанию)</option>
+                <option value="light">Светлая</option>
+                <option value="dark">Ночная</option>
+            </select>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Все права защищены.</p>
+        <p>
+            <a href="https://t.me/cheatmro" target="_blank">
+                <img src="images/telegram_icon.png" alt="Telegram">
+            </a>
+            <a href="https://www.youtube.com/@Hacker_Tv-h9g" target="_blank">
+                <img src="images/youtube_icon.png" alt="YouTube">
+            </a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

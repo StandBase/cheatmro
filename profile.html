@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="nav-link">Главная</a>
+            <a href="profile.html" class="nav-link">Профиль</a>
+        </nav>
+        <h1>Профиль</h1>
+    </header>
+
+    <main>
+        <section class="profile">
+            <img src="images/default-avatar.png" alt="Аватар пользователя" class="avatar" id="avatar">
+            <h2>Никнейм: <span id="nickname">Пользователь</span></h2>
+            <h3>Уровень: <span id="level" class="level">0</span></h3>
+            <h3>XP: <span id="xp">0</span></h3>
+            <input type="file" id="avatar-input" accept="image/*">
+            <button id="edit-button" class="button">Редактировать Профиль</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
